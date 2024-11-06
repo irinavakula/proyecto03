@@ -16,4 +16,25 @@ public class Calculadora {
     public long dividir(long dividendo, long divisor) {
         return dividendo / divisor;
     }
-}
+
+    public void presentarTablaDMultiplicar(int numero) {
+        for (int i = 0; i <= 10; i = i + 1) {
+            System.out.print(1 * numero);
+        }
+        
+
+    } 
+    public void calcularTablaMultiplicar(int numero) {
+        int[] ta = null;
+
+        int[] borrame = new int[11];
+
+        borrame[0] = 3;
+
+        borrame[4] = 6;
+
+        borrame[7] = borrame[0] + borrame[4];
+
+        System.out.println(borrame[7]);
+    }
+}      
