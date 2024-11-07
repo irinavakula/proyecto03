@@ -25,7 +25,6 @@ public class Calculadora {
 
     } 
     public void calcularTablaMultiplicar(int numero) {
-        int[] ta = null;
 
         int[] borrame = new int[11];
 

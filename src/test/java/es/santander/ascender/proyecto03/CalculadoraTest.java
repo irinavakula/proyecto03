@@ -1,22 +1,92 @@
 package es.santander.ascender.proyecto03;
-import java.beans.Transient;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
 
-import es.santander.ascender.proyecto03.Calculadora;
-
 public class CalculadoraTest {
-    @Test
-    public void testPresentarTablMultiplicar() {
-        Calculadora calculadora = new Calculadora();
-        
-        calculadora.presentarTablaDMultiplicar(6);
+    Calculadora calculadora = new Calculadora();
 
+    @Test
+    public void TestSumar(){
+        long resultado = calculadora.sumar(10, 5);
+        assertEquals(resultado,15, "10+5 deberia ser 15");
 
     }
 
     @Test
-    public void testCalcularTablaMultiplicar();
+    public void testRestar() {
+        long resultado = calculadora.restar(4,2);
+        assertEquals(resultado, 2,"4-2deberia ser 2");
+
+    }
+
+    @Test
+    public void testcalcularTablaMultiplicar() {
+        calculadora.calcularTablaMultiplicar(9);
+
+    }
+}    
+        
 
 
-}
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
